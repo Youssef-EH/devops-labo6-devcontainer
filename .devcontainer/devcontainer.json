@@ -7,5 +7,7 @@
     "vscode": {
       "extensions": ["Prisma.prisma"]
     }
-  }
+  },
+  "postCreateCommand": "cd api && npm i && npx prisma db push && npx prisma db seed",
+  "postStartCommand": "cd api && npm run start"
 }
